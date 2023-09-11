@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  <h1>TEMPLATE DE EMAIL PARA NOTIFICAÇÃO DOS APONTAMENTOS NO SISROM - AGREGADO</h1>
+  <title>Template de Email</title>
+</head>
+
+
+<style>
+    table {
+    border: double;
+    border-collapse:separate;
+    width: 20px;
+    width:100%;
+    background-color: black;
+    color: white;
+    right: 10px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+body {
+    width:90%;
+    margin-left: 5%;
+    font-family: Calibri, sans-serif;
+    position: relative;
+  }
+th{
+    padding: 10px;
+}
+td {
+    width: 60px;
+    height: justify;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <hr>
+        <h2>Detalhes da Ocorrência</h2>
+        <p><strong>Ocorrência Nº:</strong> {NumeroOcorrencia}</p>
+        <p><strong>Emissão:</strong> {DataEmissao}</p>
+        <p><strong>Tipo:</strong> {Tipo}</p>
+        <p><strong>Área:</strong> {Area}</p>
+        <p><strong>Assunto:</strong> {Assunto}</p>
+        <p><strong>Proponente:</strong> {Proponente}</p>
+        <p><strong>Processo:</strong> {Processo}</p>
+        <p><strong>Origem:</strong> {Origem}</p>
+    <hr>
+
+    <table class="table-descricao table table-dark">
+        <tr>
+            <th><strong>Descrição</strong></th>  
+        </tr>
+        <tr>
+            <td>{descricao}</td>
+        </tr>
+    </table>
+
+    <table class="table-correcao table table-dark">
+        <tr>
+            <th><strong>Correção</strong></th>  
+        </tr>
+        <tr>
+            <td>{correcao}</td>
+        </tr>
+    </table>
+
+    <table class="table-analise-causa table table-dark">
+        <tr>
+            <th><strong>Análise da Causa</strong></th>  
+        </tr>
+        <tr>
+            <td>{analise-da-causa}</td>
+        </tr>
+    </table>
+
+    <table class="table-critica-risco table table-dark">
+        <tr>
+            <th><strong>Análise Crítica do Risco</strong></th>  
+        </tr>
+        <tr>
+            <td>{analise-critica-do-risco}</td>
+        </tr>
+    </table>
+
+    <table class="table-avaliacao table table-dark">
+        <tr>
+            <th><strong>Avaliação do Risco</strong></th>  
+        </tr>
+        <tr>
+            <td>{avaliacao}</td>
+        </tr>
+    </table>
+
+    <table class="table-melhoria table table-dark">
+        <tr>
+            <th style="width: 50%;"><strong>Ação de melhoria</strong></th>  
+            <th style="width: 20%;"><strong>Data Limite para Implementação</strong></th>
+            <th style="width: 30%;"><strong>Responsável</strong></th>
+        </tr>
+        <tr>
+            <td>{acao-melhoria}</td>
+            <td>{data-limitie-para-implementacao}</td>
+            <td>{responsavel}</td>
+        </tr>
+    </table>
+
+    <table class="table-AcaoCorretiva table table-dark">
+        <tr>
+            <th style="width: 50%;"><strong>Ação Corretiva</strong></th>
+            <th style="width: 20%;"><strong>Data limite para implementação</strong></th>
+            <th style="width: 30%;"><strong>Responsável</strong></th>
+            
+        </tr>
+        <tr>
+            <td>{acao-corretiva}</td>
+            <td>{data-limite-para-implementacao}</td>
+            <td>{responsavel}</td>
+        </tr>
+    </table>
+
+    <table class="table-reprogramacao table table-dark">
+        <tr>
+            <th style="width: 20%;"><strong>Reprogramação</strong></th>
+            <th style="width: 50%;"><strong>Histórico</strong></th>
+            <th style="width: 30%;"><strong>Responsável</strong></th>
+        </tr>
+        <tr>
+            <td>{reprogramacao-1}</td>
+            <td>{historico-1}</td>
+            <td>{responsavel-1}</td>
+        </tr>
+        <tr>
+            <td>{reprogramacao-2}</td>
+            <td>{historico-2}</td>
+            <td>{responsavel-2}</td>
+        </tr>
+        <tr>
+            <td>{reprogramacao-3}</td>
+            <td>{historico-3}</td>
+            <td>{responsavel-3}</td>
+        </tr>
+    </table>
+
+
+    <table class="table-historico table table-dark">
+       <h3>Histórico</h3>
+        <tr>
+            <th style="width: 30%;"><strong>Etapa</strong></th>
+            <th style="width: 10%;"><strong>Data</strong></th>
+            <th style="width: 25%;"><strong>Responsável</strong></th>
+            <th style="width: 15%;"><strong>Ação</strong></th>
+            <th style="width: 20%;"><strong>Observação</strong></th>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+        <tr>
+            <td>{etapa}</td>
+            <td>{data}</td>
+            <td>{responsavel}</td>
+            <td>{acao}</td>
+            <td>{observacao}</td>
+        </tr>
+    </table>
+
+    <table class="table-aviso table table-dark">
+        <tr>
+            <th><strong>Aviso</strong></th>
+        </tr>
+        <tr>
+            <td>{aviso}</td>
+        </tr>
+    </table>
+
+    <table class="table-cancelamento table table-dark"> 
+        <tr>
+            <th><strong>Justificativa do Cancelamento</strong></th>
+        </tr>
+        <tr>
+            <td>{justificativa-do-cancelamento}</td>
+        </tr>
+    </table>
+<br>
+    <!-- <tfoot>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td colspan="3" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td style="padding-right: 13px; vertical-align: middle;">
+                    <img width="210" height="91" id="mail_logo.jpg" src="http://www.ipt.br/imagens/logo_ipt.gif" alt="Logo IPT">
+                </td>
+                <td style="background-color: #005a8b; width: 1px;"></td>
+                <td style="padding-left: 10px; color: #005a8b; vertical-align: bottom;">
+                    <p style="font-size: 18px; margin: 0;">
+                        <a href="http://sisrom.ad.ipt.br" style="color: #00bbe8; text-decoration: none;">
+                            <strong>http://<b>sisrom</b>.ad.ipt.br</strong>
+                        </a>
+                    </p>
+                    <p style="font-size: 16px; margin: 0;">
+                        <strong>SisRom - Sistema de Registro de Oportunidade de Melhoria</strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </tfoot> -->
+</body>
+</html>
